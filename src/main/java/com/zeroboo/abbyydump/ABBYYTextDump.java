@@ -45,16 +45,6 @@ import org.slf4j.LoggerFactory;
  */
 public class ABBYYTextDump {
 
-    public static void main(String[] args) {
-        // TODO code application logic here
-        ABBYYTextDump printer = new ABBYYTextDump("P:/dev/pthung/fgr/OCRStation/OutputXML/841791-c22647b7-0aea-5302-8b9a-25cf6769bc48.0.xml", "./out");
-        try {
-            printer.print();
-        } catch (IOException | JAXBException ex) {
-            java.util.logging.Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-    }
     Logger logger = LoggerFactory.getLogger(ABBYYTextDump.class.getName());
     String abbyyXml;
     String outputFolder = "";
